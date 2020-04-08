@@ -68,6 +68,10 @@ body {
   position: relative;
 }
 
+.left form label {
+  display: none;
+}
+
 .left input {
   width: 100%;
   height: 56px;
