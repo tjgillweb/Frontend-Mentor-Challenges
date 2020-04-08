@@ -6,35 +6,93 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  background-image: -webkit-linear-gradient(315deg, white, #fff5f5);
+  background-image: -o-linear-gradient(315deg, white, #fff5f5);
+  background-image: linear-gradient(135deg, white, #fff5f5); }
 
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh; }
+  min-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto; }
 
 .left {
   width: 60%;
   background-image: url("images/bg-pattern-desktop.svg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: left center; }
   .left .inside-content {
-    padding: 50px 145px; }
+    max-width: 445px;
+    margin: 0 auto; }
   .left img.logo {
-    padding-bottom: 140px; }
+    margin: 50px 0 125px 0; }
   .left h1 {
     text-transform: uppercase;
     font-size: 60px;
     color: #413a3a;
     letter-spacing: 15px;
+    line-height: 1.1;
     margin: 0px; }
     .left h1 .title-we-are {
       font-weight: 300;
       color: #ce9797; }
   .left p {
     color: #ce9797;
-    letter-spacing: 1px;
-    line-height: 24px; }
+    line-height: 1.7;
+    margin: 20px 0 40px 0; }
+  .left form {
+    position: relative; }
+  .left input {
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    border: 1px solid #ce9797;
+    border-radius: 50px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 15px 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ce9797; }
+  .left input::-webkit-input-placeholder {
+    color: #ce9797; }
+  .left input:-ms-input-placeholder {
+    color: #ce9797; }
+  .left input::-ms-input-placeholder {
+    color: #ce9797; }
+  .left input::placeholder {
+    color: #ce9797; }
+  .left input:focus,
+  .left input:active {
+    outline: none; }
+  .left button {
+    background-image: -webkit-linear-gradient(315deg, #f8bfbf, #ee8c8c);
+    background-image: -o-linear-gradient(315deg, #f8bfbf, #ee8c8c);
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    width: 100px;
+    height: 56px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-box-shadow: 2px 5px 10px rgba(206, 151, 151, 0.5);
+    box-shadow: 2px 5px 10px rgba(206, 151, 151, 0.5); }
+  .left .error-icon {
+    position: absolute;
+    right: 120px;
+    top: 14px;
+    display: none; }
+  .left span.error {
+    display: block;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #f96262;
+    display: none; }
 
 .right {
   width: 40%; }
