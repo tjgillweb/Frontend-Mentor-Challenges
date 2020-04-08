@@ -6,6 +6,8 @@
 
 Thanks for checking out this front-end coding challenge.
 
+Click [here](https://tjgillweb.github.io/Frontend-Mentor-Challenges/Base%20Apparel%20Coming%20Soon%20Page/) to view my solution.
+
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
