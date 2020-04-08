@@ -71,7 +71,14 @@ body {
         background-color: transparent;
         padding: 15px 30px;
         font-family: 'Josefin Sans', sans-serif;
-        color: $desaturated-red;
+    }
+
+    form.error input {
+        border: 1px solid $soft-red;
+    }
+
+    form.success input {
+        border: 1px solid $desaturated-red;
     }
 
     input::placeholder {
@@ -81,6 +88,8 @@ body {
     input:focus,
     input:active {
         outline: none;
+        box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+        background: transparent;
     }
 
     button {
@@ -94,6 +103,12 @@ body {
         right: 0;
         top: 0;
         box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-image: none;
+        background-color: hsl(0, 80%, 86%);
     }
 
     .error-icon {
@@ -103,12 +118,32 @@ body {
         display: none;
     }
 
+    form.error .error-icon {
+        display: block;
+    }
+
     span.error {
         display: block;
         margin-left: 30px;
         margin-top: 15px;
         color: $soft-red;
         display: none;
+    }
+
+    form.error span.error {
+        display: block;
+    }
+
+    span.success {
+        display: block;
+        margin-left: 30px;
+        margin-top: 15px;
+        color: $desaturated-red;
+        display: none;
+    }
+
+    form.success span.success {
+        display: block;
     }
 
 }
