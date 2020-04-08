@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+$desaturated-red: hsl(0, 36%, 70%);
+$soft-red: hsl(0, 93%, 68%);
+$dark-grayish-red: hsl(0, 6%, 24%);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left {
+    width: 60%;
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-size: cover;
+
+    .inside-content {
+        padding: 50px 145px;
+    }
+
+    img.logo {
+        padding-bottom: 140px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        color: $dark-grayish-red;
+        letter-spacing: 15px;
+
+        margin: 0px;
+
+        .title-we-are {
+            font-weight: 300;
+            color: $desaturated-red;
+        }
+    }
+
+    p {
+        color: $desaturated-red;
+        letter-spacing: 1px;
+        line-height: 24px;
+    }
+}
+
+.right {
+    width: 40%;
+}
+
+.image {
+    background-image: url('images/hero-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+}

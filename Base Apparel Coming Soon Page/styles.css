@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  font-size: 16px; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh; }
+
+.left {
+  width: 60%;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-size: cover; }
+  .left .inside-content {
+    padding: 50px 145px; }
+  .left img.logo {
+    padding-bottom: 140px; }
+  .left h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #413a3a;
+    letter-spacing: 15px;
+    margin: 0px; }
+    .left h1 .title-we-are {
+      font-weight: 300;
+      color: #ce9797; }
+  .left p {
+    color: #ce9797;
+    letter-spacing: 1px;
+    line-height: 24px; }
+
+.right {
+  width: 40%; }
+
+.image {
+  background-image: url("images/hero-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center center; */ }
